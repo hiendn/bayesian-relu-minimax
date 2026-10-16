@@ -1,0 +1,18 @@
+{
+  "R": "R version 4.4.0 (2024-04-24)",
+  "platform": "aarch64-apple-darwin20",
+  "packages": {
+    "Rcpp": "1.0.12",
+    "RcppArmadillo": "0.12.8.3.0",
+    "coda": "0.19.4.1",
+    "jsonlite": "1.8.8"
+  },
+  "RNG": [
+    "Mersenne-Twister",
+    "Inversion",
+    "Rejection"
+  ],
+  "BLAS": "libRblas.0.dylib",
+  "CXX": "clang++ -arch arm64 -std=gnu++17",
+  "Python": "3.12.14"
+}

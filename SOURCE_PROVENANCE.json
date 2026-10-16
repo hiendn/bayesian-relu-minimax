@@ -1,0 +1,187 @@
+{
+  "description": "Simulation materials from the independently verified final 50-replication release, with later table presentation changes and two supplementary numerical tables.",
+  "source_release": "Bayesian_ReLU_Minimax_eta09_50rep_4096_source",
+  "source_release_manifest_sha256": "062c6d70abbcfd81ae4d160d8424cdd9e628d6060637797c4fa1c7760f3f600d",
+  "eta": 0.9,
+  "replications_per_case": 50,
+  "fitted_parameter_cases": 2100,
+  "risk_values": 3500,
+  "complete_comparison_cells": 70,
+  "preservation": "Every file in preserved_files is byte-for-byte identical to its source release counterpart. presentation_changes identifies the table exporter and existing tables whose wording or layout was revised. All numerical records and statistical fitting calculations are unchanged. The publication manuscript and repository documentation are maintained separately.",
+  "preserved_files": {
+    "Refit.R": {
+      "bytes": 12358,
+      "sha256": "0ebb04b1ebd5e1c65be8ef92aa476a32cf924fbcd630e82d859d4be34b1fb2de"
+    },
+    "Replot.R": {
+      "bytes": 3612,
+      "sha256": "2281b77b8620b117ebaa29b1d8e16d6062fc33efb05d1c6dc16db5dacc2de28d"
+    },
+    "figures/adaptive_normalized_error.png": {
+      "bytes": 240715,
+      "sha256": "c2851cc1f8f0b2b97c2930e2df900106b67c55c99bddc9b38063c2497becaad5"
+    },
+    "figures/adaptive_squared_error.pdf": {
+      "bytes": 10753,
+      "sha256": "8bdd7ecbede42bc8f6033143076901d4fbd69205eb97c8f2c9d1cc8fd216cdbc"
+    },
+    "figures/adaptive_squared_error.png": {
+      "bytes": 65513,
+      "sha256": "6f258d9c5f8d1decbaf45c876d9c85deb4f02f6b9ba17b311ea91d6fa49efcc4"
+    },
+    "figures/two_lobes_credible_intervals.pdf": {
+      "bytes": 96787,
+      "sha256": "bd3f4bf72104bb4e021f98b83eaf5f8e314154e0a99b2e440ef5cab731cd60d0"
+    },
+    "figures/two_lobes_credible_intervals.png": {
+      "bytes": 36676,
+      "sha256": "b5fe214627c524bc821be1ca8fe0290b42595bc546c09b5716d66cce16086d36"
+    },
+    "figures/uniform_lipschitz_credible_intervals.pdf": {
+      "bytes": 96340,
+      "sha256": "870b338a0de559308097714e6596bb45341c2de619dbd44abb5e9dae2244850c"
+    },
+    "figures/uniform_lipschitz_credible_intervals.png": {
+      "bytes": 36754,
+      "sha256": "0b83a828fe6657b8f9aa19633c5bc2aeed507949d2bdf83ec4a3f9cec80236a8"
+    },
+    "protocol.json": {
+      "bytes": 4918,
+      "sha256": "99960436d2697fb44ae4efccd753e2a2492dc4315d9e75c301a1d8b7008afd1c"
+    },
+    "records/gaussian_credible_intervals_data.csv": {
+      "bytes": 484286,
+      "sha256": "37827778bf4c4939f28dc80b425996bccedb89f57c597371d585f51183e5c745"
+    },
+    "records/gaussian_credible_intervals_metadata.csv": {
+      "bytes": 2334,
+      "sha256": "77fcd50d973e382564655ea466e32008c39cf5b22fe6be7f0ccd619532b93779"
+    },
+    "records/rate_intervals.csv": {
+      "bytes": 12432,
+      "sha256": "2cc7fa322f074665a63df8821c756db338324c3c1e7000c86266bb88954eab95"
+    },
+    "records/risk_cells.csv": {
+      "bytes": 18466,
+      "sha256": "3f418d9322521d126947e682d6aac3bbf804e1abf9c3c5d6e3cc3857e5d029d7"
+    },
+    "records/selected_native_fits.csv": {
+      "bytes": 1280257,
+      "sha256": "e924ae2e33c5eb97889eec20f6ae966c84e35817c7599a5582a46d290393d119"
+    },
+    "records/selected_risks.csv": {
+      "bytes": 2348242,
+      "sha256": "c2ed1c8106c68340a24cf4f14f1dbc6d10aaf06c57f82d85e44441c18082798e"
+    },
+    "records/uniform_credible_intervals_data.csv": {
+      "bytes": 561206,
+      "sha256": "a5cad4956b8921c447098daf3b21e5a601b3d5047c481ff270c018e5a64fe01e"
+    },
+    "records/uniform_credible_intervals_metadata.csv": {
+      "bytes": 2406,
+      "sha256": "e8898528eadd958cb77a39ab67e11cb617a5b69f856a7e4ca15692023fa749c8"
+    },
+    "runtime_versions.json": {
+      "bytes": 379,
+      "sha256": "d4c0b113779471619dd1166129bc8188c10c14cb404df39738751ccb8b928eaf"
+    },
+    "source/credible.R": {
+      "bytes": 3794,
+      "sha256": "02f5b461c836475f6b1fa46a51148678cdb2a85bcc25283ce00804effefcc45f"
+    },
+    "source/gaussian.R": {
+      "bytes": 2030,
+      "sha256": "e1051401345e7baa43aec2e63df7cd592a6ed8e546d23873d9f2cfdf97ffe810"
+    },
+    "source/native/direct_kernel.cpp": {
+      "bytes": 9610,
+      "sha256": "789574888e652782aad99f2efd71f22f2d2c19a188d770809d66ad9db52701b3"
+    },
+    "source/native/direct_kernel_recording.cpp": {
+      "bytes": 9924,
+      "sha256": "cdcdcfef8fef18854fe8d53980a2c7062f7559d34309a3e1691596ba9ca705de"
+    },
+    "source/native/gaussian_kernel.cpp": {
+      "bytes": 7153,
+      "sha256": "781edb84ae5294b68c3bbf14301df3943a308aa6d3c771ba6290cb27a75a429c"
+    },
+    "source/native/local_Makevars": {
+      "bytes": 77,
+      "sha256": "555b6d185d9eb7ddbfc222abada23f6bcaf82751a9a86137c028d1a661a06f93"
+    },
+    "source/native/native_sampler.R": {
+      "bytes": 2686,
+      "sha256": "8aadf70202ca3444f3ccf8feba02cefba7f0a6965d697fad0f31b002bebbe253"
+    },
+    "source/normalize_figure1.py": {
+      "bytes": 557,
+      "sha256": "a497fd530c093aa3e4298bb9568f3d3dc1c0ae8639d6a487ba18f124ab11fd62"
+    },
+    "source/study.R": {
+      "bytes": 9162,
+      "sha256": "c7a9231116bae0be4f261e6a0acece7ca15668c0ec2603f45cbd931aaa584880"
+    },
+    "source/uniform_plot.R": {
+      "bytes": 2364,
+      "sha256": "3756462ce6cbec120f6446fd520bfdb2139968a6d7d21405ef99afef02c381f0"
+    }
+  },
+  "presentation_changes": {
+    "source/plots.R": {
+      "source_release": {
+        "bytes": 7406,
+        "sha256": "fbc7d7103ed9c5078c43f387b7911bea893739c5c6b361d7f1504f4efec88b59"
+      },
+      "current": {
+        "bytes": 9142,
+        "sha256": "036186107d3ad49775a589f4d28bcfebe32c28e09e4f729102b1adfa3065e3a2"
+      },
+      "scope": "Table captions and layout: remove Accepted column, refer to supplementary confidence-interval tables, use article-appropriate float placement, and add the supplementary table writer. Numerical summaries, sampler, priors, seed formulas, protocol, and diagnostic requirements are unchanged."
+    },
+    "figures/adaptive_rate_table.tex": {
+      "source_release": {
+        "bytes": 1276,
+        "sha256": "927b900f1fe8247f1c6495dffc1d5c7b7696314f05d8a1469ab6b9a66cbef63a"
+      },
+      "current": {
+        "bytes": 1150,
+        "sha256": "e5d06356e93edca4d25423b867d4b8369881c9883b66b9297c071fd697be6296"
+      },
+      "scope": "Table captions and layout: remove Accepted column, refer to supplementary confidence-interval tables, use article-appropriate float placement, and add the supplementary table writer. Numerical summaries, sampler, priors, seed formulas, protocol, and diagnostic requirements are unchanged."
+    },
+    "figures/width_robustness_table.tex": {
+      "source_release": {
+        "bytes": 1394,
+        "sha256": "08cdcbf9c281832e21f553d5e01595b3f496cc8f8b4855dfd5dac12a1dac1a4f"
+      },
+      "current": {
+        "bytes": 1393,
+        "sha256": "9e3bca427ea9fc6a6c0cbd88a1353e944b47b7a4f180830a4413ff912395198c"
+      },
+      "scope": "Table captions and layout: remove Accepted column, refer to supplementary confidence-interval tables, use article-appropriate float placement, and add the supplementary table writer. Numerical summaries, sampler, priors, seed formulas, protocol, and diagnostic requirements are unchanged."
+    },
+    "figures/direct_family_adaptive_table.tex": {
+      "source_release": {
+        "bytes": 1796,
+        "sha256": "a0ba6b7df7d7f7f2097c03931c347eb8c2f2ca982b878ea84be8496d7d3f7d19"
+      },
+      "current": {
+        "bytes": 1795,
+        "sha256": "9aa9630070df82f8d5dde785b5b92794e6935380219a792a0b2a299216e9d657"
+      },
+      "scope": "Table captions and layout: remove Accepted column, refer to supplementary confidence-interval tables, use article-appropriate float placement, and add the supplementary table writer. Numerical summaries, sampler, priors, seed formulas, protocol, and diagnostic requirements are unchanged."
+    }
+  },
+  "additional_tables": {
+    "figures/supplementary_half_table.tex": {
+      "bytes": 2618,
+      "sha256": "8f18e51843314ba8ff5dee9f73acfa1e69b54cc9b6abbcf4b598a1718ae6777e",
+      "scope": "35 rows of existing mean squared errors, Monte Carlo standard errors and pointwise 95% normal confidence intervals, displayed to six decimal places."
+    },
+    "figures/supplementary_lipschitz_table.tex": {
+      "bytes": 2618,
+      "sha256": "5de99f9508a3c5501772ed1d36ee6eeadf79cfbdedbde44a959f61fe29948848",
+      "scope": "35 rows of existing mean squared errors, Monte Carlo standard errors and pointwise 95% normal confidence intervals, displayed to six decimal places."
+    }
+  }
+}

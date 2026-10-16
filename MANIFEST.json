@@ -1,0 +1,262 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 147,
+      "sha256": "9ff92f9573710f6c3887e9e6bd3dbceb10f1b517af828a674114458356447a4b",
+      "git_blob_sha": "a0689fc9dd3c59870ddc7b8576c3e448fab2998f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8333,
+      "sha256": "b8f8b96dd4492ab25194e58ca3c8ee9284b538e8fa0abd977d9ca5fda708e2c0",
+      "git_blob_sha": "096068a56ccef142b7902b973ebf2a19090931c9"
+    },
+    {
+      "path": "Refit.R",
+      "bytes": 12358,
+      "sha256": "0ebb04b1ebd5e1c65be8ef92aa476a32cf924fbcd630e82d859d4be34b1fb2de",
+      "git_blob_sha": "7b591b342c6d60523854678b1fbe286bc6d610cb"
+    },
+    {
+      "path": "Replot.R",
+      "bytes": 3612,
+      "sha256": "2281b77b8620b117ebaa29b1d8e16d6062fc33efb05d1c6dc16db5dacc2de28d",
+      "git_blob_sha": "f732c139f5060dd5604b25d1c2f761708492b562"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 8543,
+      "sha256": "eea4cec96c4e6458010b4f5166ff4f6b91f6875b9843fcdee826ba0e981ec6c3",
+      "git_blob_sha": "4705b3902c4289c8806b05eb138268dd895fd9d7"
+    },
+    {
+      "path": "figures/adaptive_normalized_error.png",
+      "bytes": 240715,
+      "sha256": "c2851cc1f8f0b2b97c2930e2df900106b67c55c99bddc9b38063c2497becaad5",
+      "git_blob_sha": "f3ca81341d905fea90578b61d8ad49ce8d3d3280"
+    },
+    {
+      "path": "figures/adaptive_rate_table.tex",
+      "bytes": 1150,
+      "sha256": "e5d06356e93edca4d25423b867d4b8369881c9883b66b9297c071fd697be6296",
+      "git_blob_sha": "3c111f631ad2076dd13ee53acab0bb71b1aef36d"
+    },
+    {
+      "path": "figures/adaptive_squared_error.pdf",
+      "bytes": 10753,
+      "sha256": "8bdd7ecbede42bc8f6033143076901d4fbd69205eb97c8f2c9d1cc8fd216cdbc",
+      "git_blob_sha": "807806783577270d72fb102fdc71f30e9f04d473"
+    },
+    {
+      "path": "figures/adaptive_squared_error.png",
+      "bytes": 65513,
+      "sha256": "6f258d9c5f8d1decbaf45c876d9c85deb4f02f6b9ba17b311ea91d6fa49efcc4",
+      "git_blob_sha": "8a754a0a86d989f3ba06e35dff7b16b71026dc25"
+    },
+    {
+      "path": "figures/direct_family_adaptive_table.tex",
+      "bytes": 1795,
+      "sha256": "9aa9630070df82f8d5dde785b5b92794e6935380219a792a0b2a299216e9d657",
+      "git_blob_sha": "1f1f349a84e4eba11efbfba5cf17f5472c468940"
+    },
+    {
+      "path": "figures/supplementary_half_table.tex",
+      "bytes": 2618,
+      "sha256": "8f18e51843314ba8ff5dee9f73acfa1e69b54cc9b6abbcf4b598a1718ae6777e",
+      "git_blob_sha": "be17121f240b4f214af3560086e5984f184ef164"
+    },
+    {
+      "path": "figures/supplementary_lipschitz_table.tex",
+      "bytes": 2618,
+      "sha256": "5de99f9508a3c5501772ed1d36ee6eeadf79cfbdedbde44a959f61fe29948848",
+      "git_blob_sha": "6822d73a83765dcec048aa4a2c0154ca8d9261d5"
+    },
+    {
+      "path": "figures/two_lobes_credible_intervals.pdf",
+      "bytes": 96787,
+      "sha256": "bd3f4bf72104bb4e021f98b83eaf5f8e314154e0a99b2e440ef5cab731cd60d0",
+      "git_blob_sha": "f06d2072a04a63d682fdfe7eb4a6ea5917d67fa3"
+    },
+    {
+      "path": "figures/two_lobes_credible_intervals.png",
+      "bytes": 36676,
+      "sha256": "b5fe214627c524bc821be1ca8fe0290b42595bc546c09b5716d66cce16086d36",
+      "git_blob_sha": "21688a1232aba5753dad0f7da888c207b64263df"
+    },
+    {
+      "path": "figures/uniform_lipschitz_credible_intervals.pdf",
+      "bytes": 96340,
+      "sha256": "870b338a0de559308097714e6596bb45341c2de619dbd44abb5e9dae2244850c",
+      "git_blob_sha": "09ab4f663587213ea9ceb487fca9fa500d8e0703"
+    },
+    {
+      "path": "figures/uniform_lipschitz_credible_intervals.png",
+      "bytes": 36754,
+      "sha256": "0b83a828fe6657b8f9aa19633c5bc2aeed507949d2bdf83ec4a3f9cec80236a8",
+      "git_blob_sha": "95f3242fc655a0041cd032bfa21a284c13970c0e"
+    },
+    {
+      "path": "figures/width_robustness_table.tex",
+      "bytes": 1393,
+      "sha256": "9e3bca427ea9fc6a6c0cbd88a1353e944b47b7a4f180830a4413ff912395198c",
+      "git_blob_sha": "f56d0832322fd43881c6ab2b9cea1fca2b8d843a"
+    },
+    {
+      "path": "paper/main_arxiv.pdf",
+      "bytes": 840942,
+      "sha256": "4c04d87a22d2747891cb53ffdfd33d7545214be3e45aefae7ecedc79af4d72d1",
+      "git_blob_sha": "bf83f3ba1e0b0e2f747819877c059041b8b00034"
+    },
+    {
+      "path": "paper/main_arxiv.tex",
+      "bytes": 123182,
+      "sha256": "7111b2c0444610aec6219124782dda893ff41cec6d60d1ba645bceb1526c48c7",
+      "git_blob_sha": "7f5b0f9b6b6c2e4b31c8f444219253a43b6a42e7"
+    },
+    {
+      "path": "paper/simulation/adaptive_squared_error.pdf",
+      "bytes": 10753,
+      "sha256": "8bdd7ecbede42bc8f6033143076901d4fbd69205eb97c8f2c9d1cc8fd216cdbc",
+      "git_blob_sha": "807806783577270d72fb102fdc71f30e9f04d473"
+    },
+    {
+      "path": "paper/simulation/two_lobes_credible_intervals.pdf",
+      "bytes": 96787,
+      "sha256": "bd3f4bf72104bb4e021f98b83eaf5f8e314154e0a99b2e440ef5cab731cd60d0",
+      "git_blob_sha": "f06d2072a04a63d682fdfe7eb4a6ea5917d67fa3"
+    },
+    {
+      "path": "paper/simulation/uniform_lipschitz_credible_intervals.pdf",
+      "bytes": 96340,
+      "sha256": "870b338a0de559308097714e6596bb45341c2de619dbd44abb5e9dae2244850c",
+      "git_blob_sha": "09ab4f663587213ea9ceb487fca9fa500d8e0703"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 4918,
+      "sha256": "99960436d2697fb44ae4efccd753e2a2492dc4315d9e75c301a1d8b7008afd1c",
+      "git_blob_sha": "8fbb2534b5241b6c67767e8a4499e1f4deb551c9"
+    },
+    {
+      "path": "records/gaussian_credible_intervals_data.csv",
+      "bytes": 484286,
+      "sha256": "37827778bf4c4939f28dc80b425996bccedb89f57c597371d585f51183e5c745",
+      "git_blob_sha": "429690d90cbe5e04e3c6a7470e4f726406e7be8b"
+    },
+    {
+      "path": "records/gaussian_credible_intervals_metadata.csv",
+      "bytes": 2334,
+      "sha256": "77fcd50d973e382564655ea466e32008c39cf5b22fe6be7f0ccd619532b93779",
+      "git_blob_sha": "081b39cfca65d745c7123b0d47c17a33574b1995"
+    },
+    {
+      "path": "records/rate_intervals.csv",
+      "bytes": 12432,
+      "sha256": "2cc7fa322f074665a63df8821c756db338324c3c1e7000c86266bb88954eab95",
+      "git_blob_sha": "648d4dfec2365f12e220810b26a2ccb695983f5b"
+    },
+    {
+      "path": "records/risk_cells.csv",
+      "bytes": 18466,
+      "sha256": "3f418d9322521d126947e682d6aac3bbf804e1abf9c3c5d6e3cc3857e5d029d7",
+      "git_blob_sha": "3067dceef89b4d312369f5f9872f2aba4802c89e"
+    },
+    {
+      "path": "records/selected_native_fits.csv",
+      "bytes": 1280257,
+      "sha256": "e924ae2e33c5eb97889eec20f6ae966c84e35817c7599a5582a46d290393d119",
+      "git_blob_sha": "129136f223dbe581f3d7dca6c7e5236656143fb1"
+    },
+    {
+      "path": "records/selected_risks.csv",
+      "bytes": 2348242,
+      "sha256": "c2ed1c8106c68340a24cf4f14f1dbc6d10aaf06c57f82d85e44441c18082798e",
+      "git_blob_sha": "48ec7c3dbb5b4336e8d60d2e334a17f47f8d7a08"
+    },
+    {
+      "path": "records/uniform_credible_intervals_data.csv",
+      "bytes": 561206,
+      "sha256": "a5cad4956b8921c447098daf3b21e5a601b3d5047c481ff270c018e5a64fe01e",
+      "git_blob_sha": "37edb741b1dbe4f5d785da7e9f546d516007d212"
+    },
+    {
+      "path": "records/uniform_credible_intervals_metadata.csv",
+      "bytes": 2406,
+      "sha256": "e8898528eadd958cb77a39ab67e11cb617a5b69f856a7e4ca15692023fa749c8",
+      "git_blob_sha": "1b4070f490e99ce825a98c80de4fcd0bd71b6c9e"
+    },
+    {
+      "path": "runtime_versions.json",
+      "bytes": 379,
+      "sha256": "d4c0b113779471619dd1166129bc8188c10c14cb404df39738751ccb8b928eaf",
+      "git_blob_sha": "cd8f139b130cb9e56c38221ffa6e5b3adfcb19e1"
+    },
+    {
+      "path": "source/credible.R",
+      "bytes": 3794,
+      "sha256": "02f5b461c836475f6b1fa46a51148678cdb2a85bcc25283ce00804effefcc45f",
+      "git_blob_sha": "72ff1588afd94d0c3fd1ce85d38606a5c673e1c6"
+    },
+    {
+      "path": "source/gaussian.R",
+      "bytes": 2030,
+      "sha256": "e1051401345e7baa43aec2e63df7cd592a6ed8e546d23873d9f2cfdf97ffe810",
+      "git_blob_sha": "d32a176332e6c5fa9833ba70257f1e4f259a8ece"
+    },
+    {
+      "path": "source/native/direct_kernel.cpp",
+      "bytes": 9610,
+      "sha256": "789574888e652782aad99f2efd71f22f2d2c19a188d770809d66ad9db52701b3",
+      "git_blob_sha": "7c0e0a5b30324e853c875fd7779bfe4551645bbe"
+    },
+    {
+      "path": "source/native/direct_kernel_recording.cpp",
+      "bytes": 9924,
+      "sha256": "cdcdcfef8fef18854fe8d53980a2c7062f7559d34309a3e1691596ba9ca705de",
+      "git_blob_sha": "3b40a212474ad760178586569ca6285267d777c1"
+    },
+    {
+      "path": "source/native/gaussian_kernel.cpp",
+      "bytes": 7153,
+      "sha256": "781edb84ae5294b68c3bbf14301df3943a308aa6d3c771ba6290cb27a75a429c",
+      "git_blob_sha": "64a9f93fedfd612196c0441382b9c3025ab8aa69"
+    },
+    {
+      "path": "source/native/local_Makevars",
+      "bytes": 77,
+      "sha256": "555b6d185d9eb7ddbfc222abada23f6bcaf82751a9a86137c028d1a661a06f93",
+      "git_blob_sha": "faca328ec0b9f9a899e1d2be8438bb631e0d141c"
+    },
+    {
+      "path": "source/native/native_sampler.R",
+      "bytes": 2686,
+      "sha256": "8aadf70202ca3444f3ccf8feba02cefba7f0a6965d697fad0f31b002bebbe253",
+      "git_blob_sha": "fb60ac89c1dc906883c5a6c207932c6f5c77352c"
+    },
+    {
+      "path": "source/normalize_figure1.py",
+      "bytes": 557,
+      "sha256": "a497fd530c093aa3e4298bb9568f3d3dc1c0ae8639d6a487ba18f124ab11fd62",
+      "git_blob_sha": "7d131a0b4d2c6a8c8b687b4283cc1e9504e26b27"
+    },
+    {
+      "path": "source/plots.R",
+      "bytes": 9142,
+      "sha256": "036186107d3ad49775a589f4d28bcfebe32c28e09e4f729102b1adfa3065e3a2",
+      "git_blob_sha": "4e5a0cfd5aaaefb54159d2e50b83fc82e0c98c15"
+    },
+    {
+      "path": "source/study.R",
+      "bytes": 9162,
+      "sha256": "c7a9231116bae0be4f261e6a0acece7ca15668c0ec2603f45cbd931aaa584880",
+      "git_blob_sha": "c8be9ec62f4f78f2596e7a620bf69f5e0b6a50d0"
+    },
+    {
+      "path": "source/uniform_plot.R",
+      "bytes": 2364,
+      "sha256": "3756462ce6cbec120f6446fd520bfdb2139968a6d7d21405ef99afef02c381f0",
+      "git_blob_sha": "35afc19b864b08dce2445191752faafc15e80c78"
+    }
+  ]
+}

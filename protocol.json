@@ -1,0 +1,248 @@
+{
+  "eta": 0.9,
+  "targets": [
+    "sqrt(abs(sin(2*pi*x)))",
+    "abs(sin(2*pi*x))"
+  ],
+  "sample_sizes": [
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048,
+    4096
+  ],
+  "original_replication_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "families": [
+    "gaussian",
+    "uniform",
+    "student10"
+  ],
+  "comparisons": [
+    "N/G",
+    "N/P",
+    "N/H",
+    "U/G",
+    "t10/G"
+  ],
+  "width_cap": 64,
+  "thin": 20,
+  "swap_every": 5,
+  "ladder": [
+    0.0,
+    0.0009000000000000001,
+    0.0018000000000000002,
+    0.0036000000000000003,
+    0.007200000000000001,
+    0.014400000000000001,
+    0.028800000000000003,
+    0.057600000000000005,
+    0.11520000000000001,
+    0.23040000000000002,
+    0.3456,
+    0.46080000000000004,
+    0.5760000000000001,
+    0.6912,
+    0.8064,
+    0.9
+  ],
+  "burn_fraction": 0.5,
+  "stages": [
+    {
+      "stage": 1,
+      "iterations": 24000,
+      "chains": 3,
+      "maximum_fit_workers": 10
+    },
+    {
+      "stage": 2,
+      "iterations": 48000,
+      "chains": 4,
+      "maximum_fit_workers": 10
+    },
+    {
+      "stage": 3,
+      "iterations": 96000,
+      "chains": 6,
+      "maximum_fit_workers": 10
+    },
+    {
+      "stage": 4,
+      "iterations": 192000,
+      "chains": 8,
+      "maximum_fit_workers": 8
+    },
+    {
+      "stage": 5,
+      "iterations": 384000,
+      "chains": 8,
+      "maximum_fit_workers": 4
+    },
+    {
+      "stage": 6,
+      "iterations": 768000,
+      "chains": 8,
+      "maximum_fit_workers": 2
+    },
+    {
+      "stage": 7,
+      "iterations": 1536000,
+      "chains": 8,
+      "maximum_fit_workers": 1
+    },
+    {
+      "stage": 8,
+      "iterations": 3072000,
+      "chains": 8,
+      "maximum_fit_workers": 1
+    }
+  ],
+  "gates": {
+    "width_rhat_max": 1.1,
+    "width_ess_min": 50,
+    "raw_probe_rhat_max": 1.1,
+    "raw_probe_ess_min": 50,
+    "clipped_probe_rhat_max": 1.1,
+    "clipped_probe_ess_min": 50,
+    "post_burn_cap_fraction": 0
+  },
+  "selection": "first diagnostic-passing eligible stage; advance only after preceding diagnostic failures; stages 9\u201312 are eligible only for the sole fit in computation_amendment; no risk or credible-coverage selection",
+  "data_seed_formula": "half:20260929+400000+1000*r;one:20261001+500000+1000*r",
+  "chain_seed_formula": "data_seed+1000000*stage+100000*n_seed_index+10000*family_index+500+chain",
+  "n_seed_order": [
+    64,
+    128,
+    256,
+    512,
+    1024,
+    4096,
+    8192,
+    2048
+  ],
+  "family_order": [
+    "gaussian",
+    "uniform",
+    "student10"
+  ],
+  "rate_bootstrap": {
+    "draws": 2000,
+    "paired_original_ids": true,
+    "seed_half": 20261507,
+    "seed_one": 20262007,
+    "quantile_type": 7
+  },
+  "ladder_R_expression": "c(0,.0005,.001,.002,.004,.008,.016,.032,.064,.128,.192,.256,.32,.384,.448,.5)*(.9/.5)",
+  "stages_declared_before_sampling": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "computation_amendment": {
+    "amendment_id": "eta09-full50-job621-stages9-to12",
+    "protocol_amendment_sha256": "f3341cb4aa8e57c787fcc5df60038c2dc004c76b92bca01247bc02a174f603b0",
+    "declared_at": "2026-10-09T09:43:10.941576+00:00",
+    "timing": "after the sole unresolved fit exhausted the eight stages fixed before sampling",
+    "authority": "direct human request for additional computation on the sole unresolved original fit",
+    "original_stages_fixed_before_sampling": true,
+    "eligible_job": 621,
+    "eligible_fit": {
+      "target": "half",
+      "family": "uniform",
+      "variant": "U/G",
+      "n": 4096,
+      "replicate": 15,
+      "data_seed": 20675929
+    },
+    "supplemental_stages": [
+      {
+        "stage": 9,
+        "iterations": 6144000,
+        "burn": 3072000,
+        "chains": 8,
+        "maximum_fit_workers": 1
+      },
+      {
+        "stage": 10,
+        "iterations": 12288000,
+        "burn": 6144000,
+        "chains": 8,
+        "maximum_fit_workers": 1
+      },
+      {
+        "stage": 11,
+        "iterations": 24576000,
+        "burn": 12288000,
+        "chains": 8,
+        "maximum_fit_workers": 1
+      },
+      {
+        "stage": 12,
+        "iterations": 49152000,
+        "burn": 24576000,
+        "chains": 8,
+        "maximum_fit_workers": 1
+      }
+    ],
+    "priors_sampler_temperature_levels_diagnostic_thresholds_unchanged": true,
+    "data_replication_and_seed_formulas_unchanged": true,
+    "selection": "first diagnostic-passing stage; no risk or credible-coverage selection",
+    "if_exhausted": "retain the full-study gate and report the unresolved fit; no automatic additional stages"
+  }
+}
