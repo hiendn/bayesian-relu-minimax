@@ -718,13 +718,18 @@ guides: lower (dashed), upper (dotted).}}
 \label{fig:adaptive-risk}
 \end{figure}
 
-{At $n=4096$, N/G mean errors are $0.00597$ for $\beta=1/2$ and $0.00408$ for $\beta=1$. U/G and $t_{10}$/G mean errors are $0.00719$ and $0.00681$ for $\beta=1/2$, and $0.00469$ and $0.00423$ for $\beta=1$. Across sample sizes, the two reweighted Gaussian width-law means differ from N/G by at most $9.5\%$ and $6.9\%$, respectively. From $2048$ to $4096$, estimated decay exponents are $0.749$ and $0.707$, with estimated 95\% paired-bootstrap intervals $[0.630,0.879]$ and $[0.575,0.839]$.}
+{At $n=4096$, N/G mean errors are $0.00597$ for $\beta=1/2$ and $0.00408$ for $\beta=1$. U/G and $t_{10}$/G mean errors are $0.00719$ and $0.00681$ for $\beta=1/2$, and $0.00469$ and $0.00423$ for $\beta=1$. Across sample sizes, the two reweighted Gaussian width-law means differ from N/G by at most $9.5\%$ and $6.9\%$, respectively. From $2048$ to $4096$, estimated decay exponents are $0.749$ and $0.707$, with estimated 95\% paired-bootstrap intervals $[0.630,0.879]$ and $[0.575,0.839]$.
+These intervals are obtained by resampling the 50 replications with
+replacement, using the same sampled indices at both sample sizes, and
+recalculating the decay exponent. They quantify simulation uncertainty
+while preserving the dependence between errors calculated from the same
+underlying data stream; Appendix~\ref{app:simulation-adaptive-risk}
+gives details.}
 
 Posterior samples obtained under Gaussian network parameters and
 geometric width are reweighted to estimate the posterior mean under fixed
 shifted Poisson and power-law width priors satisfying \eqref{eq:width},
-conditional on $\mathsf K\leq64$. Each of the 70 combinations of target,
-sample size and prior uses 50 replications whose fits pass the diagnostics
+conditional on $\mathsf K\leq64$. Each of the 70 cases uses 50 replications whose fits pass the diagnostics
 in Appendix~\ref{app:simulation-computation}.
 
 
@@ -838,7 +843,7 @@ The authors take responsibility for all parts of this manuscript.
 
 \clearpage
 % References are integrated to make this source independent of BibTeX.
-\begin{thebibliography}{26}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -907,10 +912,23 @@ Peter~J. Green.
   {Bayesian} model determination.
 \newblock \emph{Biometrika}, 82\penalty0 (4):\penalty0 711--732, 1995.
 
+\bibitem[Hickernell(1997)]{hickernell1997}
+Fred~J. Hickernell.
+\newblock Erratum: Quadrature error bounds with applications to lattice rules.
+\newblock \emph{SIAM Journal on Numerical Analysis}, 34\penalty0 (2):\penalty0
+  853--866, 1997.
+\newblock \url{https://doi.org/10.1137/S0036142997974001}.
+
 \bibitem[Jasra et~al.(2007)Jasra, Stephens, and Holmes]{jasra2007}
 Ajay Jasra, David~A. Stephens, and Christopher~C. Holmes.
 \newblock Population-based reversible jump {Markov} chain {Monte Carlo}.
 \newblock \emph{Biometrika}, 94\penalty0 (4):\penalty0 787--807, 2007.
+
+\bibitem[Kish(1992)]{kish1992}
+Leslie Kish.
+\newblock Weighting for unequal $P_i$.
+\newblock \emph{Journal of Official Statistics}, 8\penalty0 (2):\penalty0
+  183--200, 1992.
 
 \bibitem[Kohler and Langer(2021)]{kohlerlanger2021}
 Michael Kohler and Sophie Langer.
@@ -1740,15 +1758,14 @@ its relevant cells; no such bound is assumed here.
 
 \section{Simulation design and computation}\label{app:simulation}
 
-All simulation code and reproducibility materials are available at
-\url{https://github.com/hiendn/bayesian-relu-minimax-full50}.
+All simulation code and reproducibility materials are available at\\
+\mbox{\url{https://github.com/hiendn/bayesian-relu-minimax}}.
 The study uses likelihood power $\eta=0.9$ and seven sample sizes from
 64 to 4096. For each target, sample size and parameter family, we fit
 50 replications, giving 2100 fits. The three Gaussian width-prior
 comparisons use the same 50 Gaussian fits within each target and sample
 size. Together with the uniform and Student parameter comparisons, this
-gives 3500 squared-error estimates across 70 combinations of target,
-sample size and prior. Supplementary Tables~\ref{tab:supp-half}
+gives 3500 squared-error estimates across 70 cases. Supplementary Tables~\ref{tab:supp-half}
 and~\ref{tab:supp-lipschitz} give all mean errors, Monte Carlo standard
 errors and pointwise 95\% Monte Carlo confidence intervals.
 
@@ -1831,9 +1848,9 @@ subintervals:
 \begin{equation}\label{eq:simulation-grid}
 x_g=\frac{g-1/2+\sqrt2-1}{1009},\qquad g=1,\ldots,1009.
 \end{equation}
-The midpoint grid is shifted by $\sqrt2-1$ grid spacings. This irrational
-offset moves its points away from the exact central zero and peaks of
-the targets. The same grid is used for every target, prior, sample size
+This is a shifted rectangle rule \citep[Section~4]{hickernell1997}.
+Our fixed shift of $\sqrt2-1$ grid spacings places the integration
+points away from the exact central zero and peaks of the targets. The same grid is used for every target, prior, sample size
 and replication; it is fixed independently of the observations and
 fitted functions. For the four Gaussian fits in
 Figure~\ref{fig:both-credible}, we independently recomputed the clipped
@@ -1863,7 +1880,7 @@ $s_{n,\beta}$ their sample standard deviation. The Monte Carlo
 standard error is $s_{n,\beta}/\sqrt{50}$. We report pointwise 95\%
 asymptotic Monte Carlo confidence intervals using the usual
 normal approximation. Let $\Phi$ be the standard normal distribution
-function and $z_{0.975}=\Phi^{-1}(0.975)\simeq1.95996$. The interval is
+function and $z_{0.975}=\Phi^{-1}(0.975)\approx1.95996$. The interval is
 \[
 \overline R_{n,\beta}\;\pm\;
 z_{0.975}\frac{s_{n,\beta}}{\sqrt{50}}.
@@ -2345,10 +2362,11 @@ expectation of the clipped output, using the same clipping and data
 for all laws. Importance weights are normalized within each data set
 before calculating its posterior mean and squared error.
 For the $S$ posterior draws with widths $k_1,\ldots,k_S$, set
-$w_s=w_\pi(k_s)$. The Kish overlap fraction
-$(\sum_{s=1}^{S}w_s)^2/(S\sum_{s=1}^{S}w_s^2)$
-reports reweighting overlap among the posterior draws. It
-does not account for their Markov dependence or unsampled modes.
+$w_s=w_\pi(k_s)$. The Kish effective sample size, expressed as a
+fraction of $S$ \citep[pp.~190--191]{kish1992},
+$(\sum_{s=1}^{S}w_s)^2/(S\sum_{s=1}^{S}w_s^2)$,
+measures the concentration of the importance weights among the posterior
+draws. It does not account for their Markov dependence or unsampled modes.
 
 {Across the 350 Gaussian fits per target, minimum sampled overlap fractions for shifted Poisson reweighting are $0.403$ and $0.482$ for $\beta=1/2$ and $\beta=1$. For power-law width they are $0.306$ and $0.194$, respectively.}
 
