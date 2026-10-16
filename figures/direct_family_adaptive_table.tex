@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\caption{Squared prediction error for uniform and Student $t_{10}$ parameters with geometric width. Each estimate uses 50 independent replications. Parentheses give Monte Carlo standard errors. Supplementary Tables~\ref{tab:supp-half} and~\ref{tab:supp-lipschitz} give pointwise 95\% normal Monte Carlo confidence intervals.}
+\label{tab:direct-family-adaptive-risk}
+\centering\small
+\begin{tabular}{@{}crrrrr@{}}
+\toprule
+& & \multicolumn{2}{c}{Uniform parameters} & \multicolumn{2}{c}{Student $t_{10}$ parameters}\\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+$\beta$ & $n$ & Error & Error$/q_{n,\beta}$ & Error & Error$/q_{n,\beta}$\\
+\midrule
+$1/2$ & 64 & 0.0860 (0.0038) & 0.337 (0.015) & 0.0847 (0.0037) & 0.332 (0.015)\\
+ & 128 & 0.0750 (0.0035) & 0.385 (0.018) & 0.0745 (0.0034) & 0.383 (0.018)\\
+ & 256 & 0.0639 (0.0014) & 0.434 (0.009) & 0.0638 (0.0013) & 0.433 (0.009)\\
+ & 512 & 0.0548 (0.0013) & 0.497 (0.011) & 0.0564 (0.0006) & 0.511 (0.006)\\
+ & 1024 & 0.0307 (0.0025) & 0.373 (0.030) & 0.0349 (0.0019) & 0.424 (0.024)\\
+ & 2048 & 0.0114 (0.0006) & 0.188 (0.010) & 0.0121 (0.0005) & 0.199 (0.008)\\
+ & 4096 & 0.0072 (0.0003) & 0.160 (0.007) & 0.0068 (0.0002) & 0.151 (0.005)\\
+\midrule
+$1$ & 64 & 0.1236 (0.0040) & 0.765 (0.025) & 0.1228 (0.0036) & 0.760 (0.023)\\
+ & 128 & 0.1077 (0.0026) & 0.955 (0.023) & 0.1086 (0.0023) & 0.963 (0.021)\\
+ & 256 & 0.0954 (0.0022) & 1.228 (0.028) & 0.0999 (0.0014) & 1.285 (0.018)\\
+ & 512 & 0.0542 (0.0051) & 1.023 (0.096) & 0.0808 (0.0023) & 1.526 (0.044)\\
+ & 1024 & 0.0148 (0.0020) & 0.415 (0.057) & 0.0202 (0.0017) & 0.564 (0.047)\\
+ & 2048 & 0.0073 (0.0004) & 0.305 (0.015) & 0.0081 (0.0004) & 0.337 (0.016)\\
+ & 4096 & 0.0047 (0.0002) & 0.292 (0.013) & 0.0042 (0.0002) & 0.264 (0.012)\\
+\bottomrule
+\end{tabular}
+\end{table}

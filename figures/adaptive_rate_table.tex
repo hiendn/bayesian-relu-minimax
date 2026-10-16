@@ -1,0 +1,26 @@
+\begin{table}[t]
+\caption{Squared prediction error with Gaussian parameters and geometric width. Each estimate uses 50 independent replications. The SE column gives Monte Carlo standard errors. Supplementary Tables~\ref{tab:supp-half} and~\ref{tab:supp-lipschitz} give pointwise 95\% normal Monte Carlo confidence intervals.}
+\label{tab:simulation-adaptive-risk}
+\centering\small
+\begin{tabular}{@{}crcccc@{}}
+\toprule
+$\beta$ & $n$ & Mean $\widetilde B_n$ & Error & SE & Error/$q_{n,\beta}$\\
+\midrule
+$1/2$ & 64 & 3.22 & 0.0850 & 0.0038 & 0.333\\
+ & 128 & 3.10 & 0.0745 & 0.0035 & 0.383\\
+ & 256 & 3.08 & 0.0633 & 0.0014 & 0.430\\
+ & 512 & 3.06 & 0.0508 & 0.0018 & 0.460\\
+ & 1024 & 3.02 & 0.0228 & 0.0020 & 0.278\\
+ & 2048 & 3.02 & 0.0100 & 0.0004 & 0.164\\
+ & 4096 & 3.02 & 0.0060 & 0.0002 & 0.132\\
+\midrule
+$1$ & 64 & 3.09 & 0.1226 & 0.0040 & 0.759\\
+ & 128 & 3.02 & 0.1062 & 0.0027 & 0.941\\
+ & 256 & 3.05 & 0.0911 & 0.0027 & 1.173\\
+ & 512 & 3.03 & 0.0407 & 0.0046 & 0.769\\
+ & 1024 & 2.99 & 0.0113 & 0.0007 & 0.317\\
+ & 2048 & 2.96 & 0.0067 & 0.0003 & 0.277\\
+ & 4096 & 2.99 & 0.0041 & 0.0002 & 0.255\\
+\bottomrule
+\end{tabular}
+\end{table}
