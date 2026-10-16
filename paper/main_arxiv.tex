@@ -1870,12 +1870,8 @@ x_g=\frac{g-1/2+\sqrt2-1}{1009},\qquad g=1,\ldots,1009.
 This shifted rectangle rule uses a fixed offset of $\sqrt2-1$ grid
 spacings so that its points do not coincide with the targets' central
 zero at $1/2$ or peaks at $1/4$ and $3/4$.
-A related use of an irrational shift appears in
-\citet[Section~5, equation~(170)]{bartuska2025}, who translate inner
-Sobol' points by $1/\sqrt2$ modulo one to avoid the origin.
-In Gauss--Kronrod quadrature, \citet[Section~4.1]{shampine2008}
-likewise motivates irrational sample points as a way to reduce
-accidental alignment between samples and the integrand.
+Related uses of irrational evaluation points to avoid exact alignment
+are discussed by \citet{bartuska2025} and \citet{shampine2008}.
 These precedents motivate avoiding exact alignment; they do not
 establish improved accuracy or a convergence rate for our chosen offset.
 The same grid is used for every target, prior, sample size
