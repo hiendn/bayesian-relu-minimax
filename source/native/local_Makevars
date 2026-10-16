@@ -1,0 +1,2 @@
+# R's bundled BLAS/LAPACK already link their bundled Fortran runtime.
+FLIBS=
