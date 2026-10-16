@@ -848,7 +848,7 @@ formulation, proof checking, proofreading, and formatting.
 The authors take responsibility for all parts of this manuscript.
 
 % References are integrated to make this source independent of BibTeX.
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -884,6 +884,14 @@ Andrew~R. Barron.
   function.
 \newblock \emph{IEEE Transactions on Information Theory}, 39\penalty0
   (3):\penalty0 930--945, 1993.
+
+\bibitem[Bartuska et~al.(2025)Bartuska, Carlon, Espath, Krumscheid, and
+  Tempone]{bartuska2025}
+Arved Bartuska, Andr{\'e} Gustavo Carlon, Luis Espath, Sebastian Krumscheid,
+  and Ra{\'u}l Tempone.
+\newblock Multilevel randomized quasi-{Monte Carlo} estimator for nested
+  integration, 2025.
+\newblock arXiv:2412.07723v2.
 
 \bibitem[Bhattacharya et~al.(2019)Bhattacharya, Pati, and
   Yang]{bhattacharya2019}
@@ -922,13 +930,6 @@ Peter~J. Green.
 \newblock Reversible jump {Markov} chain {Monte Carlo} computation and
   {Bayesian} model determination.
 \newblock \emph{Biometrika}, 82\penalty0 (4):\penalty0 711--732, 1995.
-
-\bibitem[Hickernell(1997)]{hickernell1997}
-Fred~J. Hickernell.
-\newblock Erratum: Quadrature error bounds with applications to lattice rules.
-\newblock \emph{SIAM Journal on Numerical Analysis}, 34\penalty0 (2):\penalty0
-  853--866, 1997.
-\newblock \url{https://doi.org/10.1137/S0036142997974001}.
 
 \bibitem[Jasra et~al.(2007)Jasra, Stephens, and Holmes]{jasra2007}
 Ajay Jasra, David~A. Stephens, and Christopher~C. Holmes.
@@ -1002,6 +1003,13 @@ Johannes Schmidt-Hieber.
   activation function.
 \newblock \emph{The Annals of Statistics}, 48\penalty0 (4):\penalty0
   1875--1897, 2020.
+
+\bibitem[Shampine(2008)]{shampine2008}
+L.~F. Shampine.
+\newblock Vectorized adaptive quadrature in {MATLAB}.
+\newblock \emph{Journal of Computational and Applied Mathematics},
+  211\penalty0 (2):\penalty0 131--140, 2008.
+\newblock \url{https://doi.org/10.1016/j.cam.2006.11.021}.
 
 \bibitem[Stone(1982)]{stone1982}
 Charles~J. Stone.
@@ -1859,9 +1867,18 @@ subintervals:
 \begin{equation}\label{eq:simulation-grid}
 x_g=\frac{g-1/2+\sqrt2-1}{1009},\qquad g=1,\ldots,1009.
 \end{equation}
-This is a shifted rectangle rule \citep[Section~4]{hickernell1997}.
-Our fixed shift of $\sqrt2-1$ grid spacings places the integration
-points away from the exact central zero and peaks of the targets. The same grid is used for every target, prior, sample size
+This shifted rectangle rule uses a fixed offset of $\sqrt2-1$ grid
+spacings so that its points do not coincide with the targets' central
+zero at $1/2$ or peaks at $1/4$ and $3/4$.
+A related use of an irrational shift appears in
+\citet[Section~5, equation~(170)]{bartuska2025}, who translate inner
+Sobol' points by $1/\sqrt2$ modulo one to avoid the origin.
+In Gauss--Kronrod quadrature, \citet[Section~4.1]{shampine2008}
+likewise motivates irrational sample points as a way to reduce
+accidental alignment between samples and the integrand.
+These precedents motivate avoiding exact alignment; they do not
+establish improved accuracy or a convergence rate for our chosen offset.
+The same grid is used for every target, prior, sample size
 and replication; it is fixed independently of the observations and
 fitted functions. For the four Gaussian fits in
 Figure~\ref{fig:both-credible}, we independently recomputed the clipped
