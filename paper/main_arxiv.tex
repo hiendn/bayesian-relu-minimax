@@ -35,7 +35,13 @@
 \DeclareMathOperator{\Unif}{Unif}
 
 \title{Sieve-free ReLU Bayesian priors with near-minimax posterior contraction}
-\author{Hien Duy Nguyen \and Jacob Westerhout \and Julyan Arbel}
+\author{Hien Duy Nguyen$^{1,2}$ \quad Jacob Westerhout$^{3}$ \quad Julyan Arbel$^{4}$\\[0.8em]
+\parbox{0.96\textwidth}{\centering\small
+$^{1}$Department of Mathematical and Physical Sciences,\\
+La Trobe University, Melbourne, Australia\\
+$^{2}$Institute of Mathematics for Industry, Kyushu University, Fukuoka, Japan\\
+$^{3}$School of Mathematics and Physics, The University of Queensland, Brisbane, Australia\\
+$^{4}$Univ. Grenoble Alpes, Inria, CNRS, Grenoble INP, LJK, Grenoble, France}}
 \date{}
 
 \begin{document}
@@ -721,7 +727,7 @@ guides: lower (dashed), upper (dotted).}}
 {At $n=4096$, N/G mean errors are $0.00597$ for $\beta=1/2$ and $0.00408$ for $\beta=1$. U/G and $t_{10}$/G mean errors are $0.00719$ and $0.00681$ for $\beta=1/2$, and $0.00469$ and $0.00423$ for $\beta=1$. Across sample sizes, the two reweighted Gaussian width-law means differ from N/G by at most $9.5\%$ and $6.9\%$, respectively. From $2048$ to $4096$, estimated decay exponents are $0.749$ and $0.707$, with estimated 95\% paired-bootstrap intervals $[0.630,0.879]$ and $[0.575,0.839]$.
 These intervals are obtained by resampling the 50 replications with
 replacement, using the same sampled indices at both sample sizes, and
-recalculating the decay exponent. They quantify simulation uncertainty
+recalculating the decay exponent \citep{efron1985bootstrap}. They quantify simulation uncertainty
 while preserving the dependence between errors calculated from the same
 underlying data stream; Appendix~\ref{app:simulation-adaptive-risk}
 gives details.}
@@ -841,9 +847,8 @@ OpenAI ChatGPT and Codex were used for exposition, mathematical
 formulation, proof checking, proofreading, and formatting.
 The authors take responsibility for all parts of this manuscript.
 
-\clearpage
 % References are integrated to make this source independent of BibTeX.
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -900,6 +905,12 @@ Badr-Eddine Ch{\'e}rief-Abdellatif.
 \newblock In \emph{Proceedings of the 37th International Conference on Machine
   Learning}, volume 119 of \emph{Proceedings of Machine Learning Research},
   pages 1831--1842, 2020.
+
+\bibitem[Efron and Tibshirani(1985)]{efron1985bootstrap}
+Bradley Efron and Robert Tibshirani.
+\newblock The bootstrap method for assessing statistical accuracy.
+\newblock \emph{Behaviormetrika}, 12\penalty0 (17):\penalty0 1--35, 1985.
+\newblock \url{https://doi.org/10.2333/bhmk.12.17_1}.
 
 \bibitem[Gelman and Rubin(1992)]{gelman1992inference}
 Andrew Gelman and Donald~B Rubin.
@@ -1906,7 +1917,7 @@ the decay exponent
 p_{a,b}=\frac{\log(\overline R_{a,\beta}/\overline R_{b,\beta})}
 {\log(b/a)},\qquad a<b.
 \]
-Its 95\% percentile bootstrap interval uses 2000 resamples of the 50 original replicate indices, paired across sample sizes for each target. This preserves dependence from the reused data streams. These fixed-target intervals do not bound residual Markov-chain error or establish worst-case rates.
+Its 95\% percentile bootstrap interval uses 2000 resamples of the 50 original replicate indices, paired across sample sizes for each target. This is a nonparametric percentile bootstrap applied to paired replication errors \citep[Sections~2, 7--8]{efron1985bootstrap}: the two errors from a replication form one resampling unit, and the interval endpoints are the empirical 2.5th and 97.5th percentiles of the recalculated exponents. This preserves dependence from the reused data streams. These fixed-target intervals do not bound residual Markov-chain error or establish worst-case rates.
 
 These exponents describe the displayed targets over a finite range of
 sample sizes and do not estimate worst-case H\"older-ball rates.
