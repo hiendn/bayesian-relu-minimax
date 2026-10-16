@@ -104,15 +104,15 @@
     },
     {
       "path": "paper/main_arxiv.pdf",
-      "bytes": 847336,
-      "sha256": "919d8ac379ccdb4a8ca8f6edbac394634176083c0d505a503eab86bb6fbc0b2e",
-      "git_blob_sha": "22baa33a4841c6472c87519d8204b628a52dce6a"
+      "bytes": 847060,
+      "sha256": "1d331b136ca191889b4bc0047305c16a1f4df32ac67eb886ac6b804ecb8bcd82",
+      "git_blob_sha": "0ff2e429f525bffe393e16ed2dc4afbca8da2f24"
     },
     {
       "path": "paper/main_arxiv.tex",
-      "bytes": 125889,
-      "sha256": "47e03f91c9853306742dbedca06174ce5adf86a30ce73e4221573c99ec32503a",
-      "git_blob_sha": "e6d7124643b660ee9a4e810ee97ecf071bf6544c"
+      "bytes": 125663,
+      "sha256": "8c766c58089e782e0d7d20ae31757d735458678682af5d880f490158bfb38026",
+      "git_blob_sha": "d7c65764b61b0cfd5955312810c67f1ca8943cf6"
     },
     {
       "path": "paper/simulation/adaptive_squared_error.pdf",
